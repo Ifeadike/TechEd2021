@@ -29,7 +29,7 @@ body {
   background-color: orange;
 }
 
-.divison, .addition, .decimal, .subtraction, .multipication, .equal {
+.divison, .addition, .subtraction, .multipication, .equal {
   opacity: .75;
   background-color: orange;
 }
