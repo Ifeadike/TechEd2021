@@ -1,30 +1,15 @@
 body {
   background-color: #000000
 }
-.calculator{
+
+#calculator{
          margin-bottom: 10px;
          text-align:center;
          width: 210px;
          color:white;
          border: solid white 2px;
+         box-sizing: border-box;
 }
-input{
-    outline: 0;
-    position: relative;
-    left: 5px;
-    top: 5px;
-    border: 0;
-    color: #495069;
-    background-color: 4px;
-    width: 60px;
-    height: 50px;
-    float: left;
-    margin: 5px;
-    font-size: 20px;
-    box-shadow: 0 4px rgba(0,0,0,0.2);
-  
-}
-
 
 .button {
     float: center;
@@ -32,4 +17,12 @@ input{
     display: block;
     background-color: #9c9898;
     margin-bottom: 15px;
+}
+
+.equal, .division, .multipication, .subtraction, .percentage {
+  color: orange;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero, .decimal {
+  opacity: .75;
 }
