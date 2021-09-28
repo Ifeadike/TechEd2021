@@ -1,29 +1,25 @@
 body {
   background-color: #000000
 }
-table {
-  margin: auto;
-  background-color: #2d2e2d;
-  width: 300px;
-  height: 340px;
-  text-align: center;
-  box-sizing: border-box;
+.calculator{
+         margin-bottom: 10px;
+         text-align:center;
+         width: 210px;
+         color:white;
+         border: solid white 2px;
 }
+ 
+input[type="button"] {
+         background-color: #9c9898;
+         color: white;
+         border: solid white 2px;
+         width:100%
 }
-input {
-    outline: 0;
-    position: relative;
-    left: 5px;
-    top: 5px;
-    border: 0;
-    color: #495069;
-    background-color: 4px;
-    width: 60px;
-    height: 50px;
-    float: left;
-    margin: 5px;
-    font-size: 20px;
-    box-shadow: 0 4px rgba(0,0,0,0.2);
+  
+         input[type="text"] {
+         background-color:white;
+         border: solid black 2px;
+         width:100%
 }
 
 .operator {
@@ -31,11 +27,10 @@ input {
     position: relative;
 }
 
-
-#clear {
-    float: left;
+.button {
+    float: center;
     position: relative;
     display: block;
-    background-color: #ff9fa8;
+    background-color: #9c9898;
     margin-bottom: 15px;
 }
