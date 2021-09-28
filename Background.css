@@ -2,7 +2,7 @@ body {
   background-color: #000000
 }
 
-#calculator{
+.calculator{
          margin-bottom: 10px;
          text-align:center;
          width: 210px;
@@ -17,12 +17,4 @@ body {
     display: block;
     background-color: #9c9898;
     margin-bottom: 15px;
-}
-
-.equal, .division, .multipication, .subtraction, .percentage {
-  color: orange;
-}
-
-.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero, .decimal {
-  opacity: .75;
 }
