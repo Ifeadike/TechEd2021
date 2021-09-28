@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff
+  background-color: #000000
 }
 table {
   margin: auto;
@@ -8,4 +8,34 @@ table {
   height: 340px;
   text-align: center;
   box-sizing: border-box;
+}
+}
+input {
+    outline: 0;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    border: 0;
+    color: #495069;
+    background-color: 4px;
+    width: 60px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+}
+
+.operator {
+    background-color: #f1ff92;
+    position: relative;
+}
+
+
+#clear {
+    float: left;
+    position: relative;
+    display: block;
+    background-color: #ff9fa8;
+    margin-bottom: 15px;
 }
