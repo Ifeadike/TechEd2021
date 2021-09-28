@@ -24,6 +24,10 @@ body {
   margin: 10px;
 }
 
-.one, .two, .three {
+.decimal {
+  opacity: .75;
+}
+
+.division {
   opacity: .75;
 }
