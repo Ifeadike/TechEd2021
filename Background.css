@@ -5,7 +5,7 @@ body {
 .calculator{
          margin-bottom: 10px;
          text-align:center;
-         width: 210px;
+         width: 500px;
          color:white;
          border: solid white 2px;
    
@@ -17,4 +17,9 @@ body {
     display: block;
     background-color: #9c9898;
     margin-bottom: 15px;
+}
+
+.zero {
+  clear: both;
+  margin: 10px
 }
