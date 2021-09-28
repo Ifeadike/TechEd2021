@@ -21,5 +21,9 @@ body {
 
 .zero {
   clear: both;
-  margin: 10px
+  margin: 10px;
+}
+
+.one, .two, .three {
+  opacity: .75;
 }
