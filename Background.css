@@ -26,8 +26,12 @@ body {
 
 .decimal {
   opacity: .75;
+  background-color: orange;
 }
 
-.division {
+.divison, .addition, .decimal, .subtraction, .multipication, .equal {
   opacity: .75;
+  background-color: orange;
 }
+
+.
