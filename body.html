@@ -2,51 +2,57 @@
 <html>
 <head>
     <title>A Simple Calculator</title>
-    <link rel="stylesheet" type="text/css" href="Background.css">
+    <link rel="stylesheet" href="./Background.css">
 </head>
 <body>
 
 
-    <div id="calculator" align="center">
+    <div class="calc" align="center">
 
-        
-        <table border= "2">
+        <section class="screen">
+            <table border= "2">
             <tr>
                 <tr>
-            <td colspan="4"><input id="screen" value="0"><br></td>
+            <td colspan="4"><input class="screen" value="0"><br></td>
                 </tr>
-            <td><input type="button" class="clear" name="clear" value=" C " onclick="calc.input.b\value += ' '"></td>
-            <td> <input type="button" name="percentage" value="%" onclick="calc.input.b\value += '%'"></td>
-            <td><input type="button" class="decimal" name="decimal" value="." onclick="calc.input.b\value += '.'"></td>
-            <td><input type="button" class="divison" name="divide sign" value="/" onclick="calc.input.b\value += '/'"></td>
+        </section>
+
+
+        <section class="calc-buttons">
+            <td><input type="button" class="calc-button" name="clear" value=" C " onclick="outputNum()"></td>
+            <td> <input type="button" class="calc-button" name="percentage" value="%" onclick="outputNum(0.01)">%</td>
+            <td><input type="button" class="calc-button" name="decimal" value="." onclick="outputNum('.')">.</td>
+            <td><input type="button" class="calc-buttondivide" name="divide sign" value="/" onclick="outputNum('/')">/</td>
             
             </tr>
-        <br>
+            <br>
             <tr>
-            <td><input type="button" name="one" value="1" onclick="calc.input.b\value += '1'"></td>
-            <td><input type="button" name="two" value="2" onclick="calc.input.b\value += '2'"></td>
-            <td><input type="button" name="three" value="3" onclick="calc.input.b\value += '3'"></td>
-            <td><input type="button" class="addition" name="plus sign" value="+" onclick="calc.input.b\value += '+'"></td>
+            <td><input type="button" class="calc-button" name="one" value="1" onclick="outputNum('1')">1</td>
+            <td><input type="button" class="calc-button" name="two" value="2" onclick="outputNum('2')">2</td>
+            <td><input type="button" class="calc-button" name="three" value="3" onclick="outputNum('3')">3</td>
+            <td><input type="button" class="calc-buttonaddition" name="plus sign" value="+" onclick="outputNum('+')">+</td>
             </tr>
-        <br>
+            <br>
             <tr>
-            <td><input type="button" name="four" value="4" onclick="calc.input.b\value += '4'"></td>
-            <td><input type="button" name="five" value="5" onclick="calc.input.b\value += '5'"></td>
-            <td><input type="button" name="six" value="6" onclick="calc.input.b\value += '6'"></td>
-            <td><input type="button" class="subtraction" name="minus sign" value="-" onclick="calc.input.b\value += '-'"></td>
+            <td><input type="button" class="calc-button" name="four" value="4" onclick="outputNum('4')">4</td>
+            <td><input type="button" class="calc-button" name="five" value="5" onclick="outputNum('5')">5</td>
+            <td><input type="button" class="calc-button" name="six" value="6" onclick="outputNum('6')">6</td>
+            <td><input type="button" class="calc-buttonsubtraction" name="minus sign" value="-" onclick="outputNum('-')">-</td>
             </tr>
-        <br>
+            <br>
             <tr>
-            <td><input type="button" name="seven" value="7" onclick="calc.input.b\value += '7'"></td>
-            <td><input type="button" name="eight" value="8" onclick="calc.input.b\value += '8'"></td>
-            <td><input type="button" name="nine" value="9" onclick="calc.input.b\value += '9'"></td>
-            <td><input type="button" class="multipication" name="times sign" value="*" onclick="calc.input.b\value += '*'"><</td>
+            <td><input type="button" class="calc-button" name="seven" value="7" onclick="outputNum('7')" >7</td>
+            <td><input type="button" class="calc-button" name="eight" value="8" onclick="outputNum('8')">8</td>
+            <td><input type="button" class="calc-button" name="nine" value="9" onclick="outputNum('9')">9</td>
+            <td><input type="button" class="calc-buttonmultipcation" name="times sign" value="*" onclick="outputNum('*')">*</td>
             </tr>
-        <br>
+            <br>
             <tr>
-            <td colspan="3"><input type="button" name="zero" value="0" onclick="calc.input.b\value += '0'"></td>
-            <td><input type="button" class="equal" name="equal" value="=" onclick="calc.input.b\value += '='"></td>
+            <td colspan="3"><input type="button" class="calc-button triple" name="zero" value="0" onclick="outputNum('0')">0</td>
+            <td><input type="button" class="equal" class="calc-buttonequal" name="equal" value="=" onclick="outputNum('=')">=</td>
             </tr>
+        </section>
     </div>
+    <script src="./Javascript.js"></script>
 </body>
 </html>
