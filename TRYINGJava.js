@@ -1,15 +1,3 @@
-let runningTotal = 0;
-let buffer = "0";
-let previousOperator;
-
-const screen = document.querySelector('.screen');
-
-function buttonClick(value) {
-    screen.innerText = buffer;
-    rerender();
-}
-
-
 function outputNum(value){
     document.getElementById("screen").value += value;
 }
@@ -21,3 +9,9 @@ function result(){
 function reset(){
     document.getElementById("screen").value = '';
 }
+
+let buttons = Array.from(document.getElementsByClassName('calc-buttons'));
+
+buttons.map (buttons=> {
+    buttons.addEventListener('click',.)
+})
